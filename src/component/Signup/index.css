@@ -1,0 +1,43 @@
+.signup-bg-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+}
+.signup-container {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "openSans";
+}
+.signup-input {
+  width: 350px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.signup-terms {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    margin: 10px;
+    padding: 10px;
+  }
+  .signup-input {
+    width: 160px;
+    font-size: 10px;
+  }
+  .signup-heading {
+    text-align: center;
+  }
+}

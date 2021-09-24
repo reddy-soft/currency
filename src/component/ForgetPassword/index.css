@@ -1,0 +1,77 @@
+.forget-bg-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #02111e;
+  background-image: radial-gradient(#2a97f4, white);
+  min-height: 100vh;
+  font-family: "Roboto";
+}
+.forget-Card {
+  margin: 120px;
+  background-color: #ebf0f4;
+  border-radius: 20px;
+  font-size: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forget-image {
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.forget-form {
+  margin-right: 240px;
+}
+.forget-button {
+  background-color: #11718a;
+  width: 140px;
+  height: 30px;
+  color: white;
+}
+.forget-err {
+  font-size: 12px;
+}
+.delete {
+  display: none;
+}
+@media (max-width: 768px) {
+  .forget-Card {
+    display: flex;
+
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .forget-form {
+    padding: 10px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-input {
+    width: 140px;
+    font-size: 10px;
+  }
+  .forget-button {
+    width: 140px;
+  }
+  .forget-image {
+    display: none;
+
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
