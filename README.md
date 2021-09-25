@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+In this project i build a **currency converter App** by applying the concepts i have learned till now. This project allows to convert foreign source and target country currencies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app will demonstrate my skills by creating an currency converter app that will fetch data from an Local Storage for Login, Sign Up and forget password pages and for home page it contains the currency converter that will contain source and target currencies that source and target currencies have multiple currency values that can be changed to get latest currency exchange values by using an open api i got from https://www.exchangerate-api.com and internal server using a class component, displaying that data, using **component lifecycle** methods, **routing** concepts, **authentication**, and **authorization**, and adding responsiveness to the website.
 
-## Available Scripts
+<summary>Click to view the Set Up Instructions</summary>
 
-In the project directory, you can run:
+- Download dependencies by running `npm install`
+- Start up the app using `npm start`
+</details>
 
-### `npm start`
+<details>
+<summary>Click to view the Functionality i added</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Functionality
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This app has the following functionalities
 
-### `npm test`
+- Login Route
+  - Users can be able to login to their account by entering a valid username and password.
+- Users should be able to navigate to Home.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Users can be able to view the website responsively in mobile view, tablet view as well
+- Home Route
 
-### `npm run build`
+  - Navbar contains Logout button
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Login Users can be able to see the various currency select options on home page.
+  - Login Users can be able to select the source and target currency values and able to see the exchange rate.
+  - Users can be able to logout from accounts page.
+  - Users can be able to view the website responsively in mobile view, tablet view as well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- When the users enter invalid route in the URL then the Page not found Route will be displayed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</details>
 
-### `npm run eject`
+### Data Fetch URLs
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<details>
+<summary>Data fetch URLs</summary>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+response:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+{ "result": "success", "documentation": "https://www.exchangerate-api.com/docs", "terms_of_use": "https://www.exchangerate-api.com/terms", "time_last_update_unix": 1585267200, "time_last_update_utc": "Fri, 27 Mar 2020 00:00:00 +0000", "time_next_update_unix": 1585353700, "time_next_update_utc": "Sat, 28 Mar 2020 00:00:00 +0000", "base_code": "USD", "conversion_rates": { "USD": 1, "AUD": 1.4817, "BGN": 1.7741, "CAD": 1.3168, "CHF": 0.9774, "CNY": 6.9454, "EGP": 15.7361, "EUR": 0.9013, "GBP": 0.7679, "...": 7.8536, "...": 1.3127, "...": 7.4722, etc. etc. } }
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> ### Further improvement ideas
+>
+> - components implementation using functional and hooks
+> - To append multiple currency convertion data result one by one when selected, ability to compare and delete the result data
